@@ -172,7 +172,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBAction func menuPressed(_ sender: Any) {
         
-        let alert = UIAlertController(title: "What do you want to do?", message: "", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "What do you want to do?", message: "", preferredStyle: .alert)
         
         let logout = UIAlertAction(title: "Logout", style: .default) { (action) in
             
