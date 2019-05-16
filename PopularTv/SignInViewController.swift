@@ -8,10 +8,13 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleMobileAds
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
+    
+    @IBOutlet weak var bannerView: GADBannerView!
     
     override func viewDidAppear(_ animated: Bool) {
         print("view did appear")
@@ -22,6 +25,9 @@ class SignInViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         print("view will appear")
+        bannerView.adUnitID = "ca-app-pub-1666211014421581/6952262564"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     override func viewDidLoad() {
         print("view did load")

@@ -8,13 +8,19 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 class MyMoviesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var bannerView: GADBannerView!
     var myMovies = [Movie]()
     @IBOutlet weak var myTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        bannerView.adUnitID = "ca-app-pub-1666211014421581/6952262564"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         self.getMyMovies()
     }
     

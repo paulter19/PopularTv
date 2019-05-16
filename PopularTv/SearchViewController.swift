@@ -9,9 +9,11 @@
 import UIKit
 import FirebaseDatabase
 import Firebase
+import GoogleMobileAds
 
 class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
     
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var searchShowsButton: UIButton!
     @IBOutlet weak var searchFriendsButton: UIButton!
     @IBOutlet weak var myTableView: UITableView!
@@ -26,6 +28,9 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     var searchFor = "shows"
     
     override func viewWillAppear(_ animated: Bool) {
+        bannerView.adUnitID = "ca-app-pub-1666211014421581/6952262564"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         getTrending()
     }
     

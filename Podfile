@@ -9,8 +9,8 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'Google-Mobile-Ads-SDK'
 
-pod 'GoogleSignIn'
 
 
   # Pods for PopularTv

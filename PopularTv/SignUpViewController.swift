@@ -8,14 +8,19 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var usernameTextfields: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView.adUnitID = "ca-app-pub-1666211014421581/6952262564"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 import FirebaseCore
 import FirebaseDatabase
 
@@ -21,13 +22,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var friends = [String]()
     var friendMovieIDs  = [String]()
     var watchedBy = [String:Any]()
+    
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var myTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
         getTrending()
         getFriends()
+        bannerView.adUnitID = "ca-app-pub-1666211014421581/6952262564"
+
         
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        bannerView.load(GADRequest())
     }
     
     
@@ -328,5 +337,40 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
 
+}
+extension ViewController:GADBannerViewDelegate{
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("adViewDidReceiveAd")
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        print("adViewWillPresentScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewWillDismissScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewDidDismissScreen")
+    }
+    
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        print("adViewWillLeaveApplication")
+    }
+    
+    
 }
 
