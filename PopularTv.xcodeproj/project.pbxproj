@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5657ED726CC283C587B86FB9 /* Pods_PopularTv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C65E0D6125078CDF65D0A /* Pods_PopularTv.framework */; };
+		7F4DDDE269812A0E69E94FDE /* Pods_PopularTvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5672735FBC1CB8D3374D8BD /* Pods_PopularTvTests.framework */; };
+		AD6AFCA1CDFBA144AEDB8DAE /* Pods_PopularTvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907FC3E2F5FA3BA5F3BB4915 /* Pods_PopularTvUITests.framework */; };
+		E386CD6522807ACE004E3438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD6422807ACE004E3438 /* AppDelegate.swift */; };
+		E386CD6722807ACE004E3438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD6622807ACE004E3438 /* ViewController.swift */; };
+		E386CD6A22807ACE004E3438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E386CD6822807ACE004E3438 /* Main.storyboard */; };
+		E386CD6C22807ACF004E3438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E386CD6B22807ACF004E3438 /* Assets.xcassets */; };
+		E386CD6F22807ACF004E3438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E386CD6D22807ACF004E3438 /* LaunchScreen.storyboard */; };
+		E386CD7A22807ACF004E3438 /* PopularTvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD7922807ACF004E3438 /* PopularTvTests.swift */; };
+		E386CD8522807ACF004E3438 /* PopularTvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD8422807ACF004E3438 /* PopularTvUITests.swift */; };
+		E386CD9322807AFC004E3438 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E386CD9222807AFB004E3438 /* GoogleService-Info.plist */; };
+		E386CD9522807D3B004E3438 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9422807D3B004E3438 /* HomeTableViewCell.swift */; };
+		E386CD9722807D50004E3438 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9622807D50004E3438 /* HomeCollectionViewCell.swift */; };
+		E386CD9922807E83004E3438 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9822807E83004E3438 /* Movie.swift */; };
+		E386CD9B22808ABF004E3438 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9A22808ABF004E3438 /* SearchViewController.swift */; };
+		E3C480B02283439C007B175B /* app store logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C480AF2283439B007B175B /* app store logo.png */; };
+		E3C480B2228352E2007B175B /* MyMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C480B1228352E2007B175B /* MyMoviesViewController.swift */; };
+		E3DAC0B322809C89005ED48F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC0B222809C89005ED48F /* DetailController.swift */; };
+		E3DAC0B52280A10D005ED48F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC0B42280A10D005ED48F /* SignInViewController.swift */; };
+		E3DAC0B72280A115005ED48F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC0B62280A115005ED48F /* SignUpViewController.swift */; };
+		E3DAC0B92280BC43005ED48F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC0B82280BC43005ED48F /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E386CD7622807ACF004E3438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E386CD5922807ACE004E3438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E386CD6022807ACE004E3438;
+			remoteInfo = PopularTv;
+		};
+		E386CD8122807ACF004E3438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E386CD5922807ACE004E3438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E386CD6022807ACE004E3438;
+			remoteInfo = PopularTv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09A276F6ED8FD89CEDEB1083 /* Pods-PopularTv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv.debug.xcconfig"; sourceTree = "<group>"; };
+		0B93AAEF59F5F3CE037FA4B0 /* Pods-PopularTv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTv.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv.release.xcconfig"; sourceTree = "<group>"; };
+		172775C54A3C8D2C599648DC /* Pods-PopularTvUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvUITests/Pods-PopularTvUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DCED19B82634EBB7CD9639B /* Pods-PopularTvUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvUITests/Pods-PopularTvUITests.release.xcconfig"; sourceTree = "<group>"; };
+		513A81F538EA87E6BDBE584F /* Pods-PopularTvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvTests/Pods-PopularTvTests.debug.xcconfig"; sourceTree = "<group>"; };
+		793500AE8BA2744DB3E5F34C /* Pods-PopularTvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvTests/Pods-PopularTvTests.release.xcconfig"; sourceTree = "<group>"; };
+		907FC3E2F5FA3BA5F3BB4915 /* Pods_PopularTvUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularTvUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1C65E0D6125078CDF65D0A /* Pods_PopularTv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularTv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5672735FBC1CB8D3374D8BD /* Pods_PopularTvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularTvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386CD6122807ACE004E3438 /* PopularTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386CD6422807ACE004E3438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E386CD6622807ACE004E3438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E386CD6922807ACE004E3438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E386CD6B22807ACF004E3438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E386CD6E22807ACF004E3438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E386CD7022807ACF004E3438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E386CD7522807ACF004E3438 /* PopularTvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386CD7922807ACF004E3438 /* PopularTvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvTests.swift; sourceTree = "<group>"; };
+		E386CD7B22807ACF004E3438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E386CD8022807ACF004E3438 /* PopularTvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386CD8422807ACF004E3438 /* PopularTvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvUITests.swift; sourceTree = "<group>"; };
+		E386CD8622807ACF004E3438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E386CD9222807AFB004E3438 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E386CD9422807D3B004E3438 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E386CD9622807D50004E3438 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E386CD9822807E83004E3438 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E386CD9A22808ABF004E3438 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E3C480AF2283439B007B175B /* app store logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app store logo.png"; path = "Pods/app store logo.png"; sourceTree = SOURCE_ROOT; };
+		E3C480B1228352E2007B175B /* MyMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviesViewController.swift; sourceTree = "<group>"; };
+		E3DAC0B222809C89005ED48F /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		E3DAC0B42280A10D005ED48F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E3DAC0B62280A115005ED48F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E3DAC0B82280BC43005ED48F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E386CD5E22807ACE004E3438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5657ED726CC283C587B86FB9 /* Pods_PopularTv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7222807ACF004E3438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4DDDE269812A0E69E94FDE /* Pods_PopularTvTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7D22807ACF004E3438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6AFCA1CDFBA144AEDB8DAE /* Pods_PopularTvUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58FEBEF359815DA68892A069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C65E0D6125078CDF65D0A /* Pods_PopularTv.framework */,
+				D5672735FBC1CB8D3374D8BD /* Pods_PopularTvTests.framework */,
+				907FC3E2F5FA3BA5F3BB4915 /* Pods_PopularTvUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9250646EC6F3EF3914C59881 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09A276F6ED8FD89CEDEB1083 /* Pods-PopularTv.debug.xcconfig */,
+				0B93AAEF59F5F3CE037FA4B0 /* Pods-PopularTv.release.xcconfig */,
+				513A81F538EA87E6BDBE584F /* Pods-PopularTvTests.debug.xcconfig */,
+				793500AE8BA2744DB3E5F34C /* Pods-PopularTvTests.release.xcconfig */,
+				172775C54A3C8D2C599648DC /* Pods-PopularTvUITests.debug.xcconfig */,
+				2DCED19B82634EBB7CD9639B /* Pods-PopularTvUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E386CD5822807ACE004E3438 = {
+			isa = PBXGroup;
+			children = (
+				E386CD6322807ACE004E3438 /* PopularTv */,
+				E386CD7822807ACF004E3438 /* PopularTvTests */,
+				E386CD8322807ACF004E3438 /* PopularTvUITests */,
+				E386CD6222807ACE004E3438 /* Products */,
+				9250646EC6F3EF3914C59881 /* Pods */,
+				58FEBEF359815DA68892A069 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E386CD6222807ACE004E3438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E386CD6122807ACE004E3438 /* PopularTv.app */,
+				E386CD7522807ACF004E3438 /* PopularTvTests.xctest */,
+				E386CD8022807ACF004E3438 /* PopularTvUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E386CD6322807ACE004E3438 /* PopularTv */ = {
+			isa = PBXGroup;
+			children = (
+				E386CD6422807ACE004E3438 /* AppDelegate.swift */,
+				E3DAC0B222809C89005ED48F /* DetailController.swift */,
+				E386CD6622807ACE004E3438 /* ViewController.swift */,
+				E386CD6822807ACE004E3438 /* Main.storyboard */,
+				E3C480B1228352E2007B175B /* MyMoviesViewController.swift */,
+				E386CD9422807D3B004E3438 /* HomeTableViewCell.swift */,
+				E386CD9622807D50004E3438 /* HomeCollectionViewCell.swift */,
+				E386CD9A22808ABF004E3438 /* SearchViewController.swift */,
+				E3DAC0B42280A10D005ED48F /* SignInViewController.swift */,
+				E3DAC0B62280A115005ED48F /* SignUpViewController.swift */,
+				E386CD9822807E83004E3438 /* Movie.swift */,
+				E3DAC0B82280BC43005ED48F /* User.swift */,
+				E386CD6B22807ACF004E3438 /* Assets.xcassets */,
+				E386CD6D22807ACF004E3438 /* LaunchScreen.storyboard */,
+				E386CD7022807ACF004E3438 /* Info.plist */,
+				E386CD9222807AFB004E3438 /* GoogleService-Info.plist */,
+				E3C480AF2283439B007B175B /* app store logo.png */,
+			);
+			path = PopularTv;
+			sourceTree = "<group>";
+		};
+		E386CD7822807ACF004E3438 /* PopularTvTests */ = {
+			isa = PBXGroup;
+			children = (
+				E386CD7922807ACF004E3438 /* PopularTvTests.swift */,
+				E386CD7B22807ACF004E3438 /* Info.plist */,
+			);
+			path = PopularTvTests;
+			sourceTree = "<group>";
+		};
+		E386CD8322807ACF004E3438 /* PopularTvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E386CD8422807ACF004E3438 /* PopularTvUITests.swift */,
+				E386CD8622807ACF004E3438 /* Info.plist */,
+			);
+			path = PopularTvUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E386CD6022807ACE004E3438 /* PopularTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E386CD8922807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTv" */;
+			buildPhases = (
+				56722BF1E4ED0C0F136467D9 /* [CP] Check Pods Manifest.lock */,
+				E386CD5D22807ACE004E3438 /* Sources */,
+				E386CD5E22807ACE004E3438 /* Frameworks */,
+				E386CD5F22807ACE004E3438 /* Resources */,
+				5D7B5A9EF56756EB3EE83911 /* [CP] Embed Pods Frameworks */,
+				927AFF782A540121E4EA07DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopularTv;
+			productName = PopularTv;
+			productReference = E386CD6122807ACE004E3438 /* PopularTv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E386CD7422807ACF004E3438 /* PopularTvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E386CD8C22807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTvTests" */;
+			buildPhases = (
+				B8286B16037948579A86B4DC /* [CP] Check Pods Manifest.lock */,
+				E386CD7122807ACF004E3438 /* Sources */,
+				E386CD7222807ACF004E3438 /* Frameworks */,
+				E386CD7322807ACF004E3438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E386CD7722807ACF004E3438 /* PBXTargetDependency */,
+			);
+			name = PopularTvTests;
+			productName = PopularTvTests;
+			productReference = E386CD7522807ACF004E3438 /* PopularTvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E386CD7F22807ACF004E3438 /* PopularTvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E386CD8F22807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTvUITests" */;
+			buildPhases = (
+				AE74367BB35F6C547402A5EA /* [CP] Check Pods Manifest.lock */,
+				E386CD7C22807ACF004E3438 /* Sources */,
+				E386CD7D22807ACF004E3438 /* Frameworks */,
+				E386CD7E22807ACF004E3438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E386CD8222807ACF004E3438 /* PBXTargetDependency */,
+			);
+			name = PopularTvUITests;
+			productName = PopularTvUITests;
+			productReference = E386CD8022807ACF004E3438 /* PopularTvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E386CD5922807ACE004E3438 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ter, Paul D";
+				TargetAttributes = {
+					E386CD6022807ACE004E3438 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					E386CD7422807ACF004E3438 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = E386CD6022807ACE004E3438;
+					};
+					E386CD7F22807ACF004E3438 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = E386CD6022807ACE004E3438;
+					};
+				};
+			};
+			buildConfigurationList = E386CD5C22807ACE004E3438 /* Build configuration list for PBXProject "PopularTv" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E386CD5822807ACE004E3438;
+			productRefGroup = E386CD6222807ACE004E3438 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E386CD6022807ACE004E3438 /* PopularTv */,
+				E386CD7422807ACF004E3438 /* PopularTvTests */,
+				E386CD7F22807ACF004E3438 /* PopularTvUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E386CD5F22807ACE004E3438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E386CD6F22807ACF004E3438 /* LaunchScreen.storyboard in Resources */,
+				E386CD9322807AFC004E3438 /* GoogleService-Info.plist in Resources */,
+				E386CD6C22807ACF004E3438 /* Assets.xcassets in Resources */,
+				E3C480B02283439C007B175B /* app store logo.png in Resources */,
+				E386CD6A22807ACE004E3438 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7322807ACF004E3438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7E22807ACF004E3438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56722BF1E4ED0C0F136467D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopularTv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7B5A9EF56756EB3EE83911 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		927AFF782A540121E4EA07DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopularTv/Pods-PopularTv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE74367BB35F6C547402A5EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopularTvUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8286B16037948579A86B4DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopularTvTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E386CD5D22807ACE004E3438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C480B2228352E2007B175B /* MyMoviesViewController.swift in Sources */,
+				E386CD9B22808ABF004E3438 /* SearchViewController.swift in Sources */,
+				E3DAC0B322809C89005ED48F /* DetailController.swift in Sources */,
+				E386CD9522807D3B004E3438 /* HomeTableViewCell.swift in Sources */,
+				E386CD6722807ACE004E3438 /* ViewController.swift in Sources */,
+				E3DAC0B52280A10D005ED48F /* SignInViewController.swift in Sources */,
+				E386CD6522807ACE004E3438 /* AppDelegate.swift in Sources */,
+				E3DAC0B72280A115005ED48F /* SignUpViewController.swift in Sources */,
+				E386CD9722807D50004E3438 /* HomeCollectionViewCell.swift in Sources */,
+				E3DAC0B92280BC43005ED48F /* User.swift in Sources */,
+				E386CD9922807E83004E3438 /* Movie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7122807ACF004E3438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E386CD7A22807ACF004E3438 /* PopularTvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E386CD7C22807ACF004E3438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E386CD8522807ACF004E3438 /* PopularTvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E386CD7722807ACF004E3438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E386CD6022807ACE004E3438 /* PopularTv */;
+			targetProxy = E386CD7622807ACF004E3438 /* PBXContainerItemProxy */;
+		};
+		E386CD8222807ACF004E3438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E386CD6022807ACE004E3438 /* PopularTv */;
+			targetProxy = E386CD8122807ACF004E3438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E386CD6822807ACE004E3438 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E386CD6922807ACE004E3438 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E386CD6D22807ACF004E3438 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E386CD6E22807ACF004E3438 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E386CD8722807ACF004E3438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E386CD8822807ACF004E3438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E386CD8A22807ACF004E3438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A276F6ED8FD89CEDEB1083 /* Pods-PopularTv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E386CD8B22807ACF004E3438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B93AAEF59F5F3CE037FA4B0 /* Pods-PopularTv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E386CD8D22807ACF004E3438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513A81F538EA87E6BDBE584F /* Pods-PopularTvTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTvTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopularTv.app/PopularTv";
+			};
+			name = Debug;
+		};
+		E386CD8E22807ACF004E3438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793500AE8BA2744DB3E5F34C /* Pods-PopularTvTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTvTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopularTv.app/PopularTv";
+			};
+			name = Release;
+		};
+		E386CD9022807ACF004E3438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172775C54A3C8D2C599648DC /* Pods-PopularTvUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTvUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PopularTv;
+			};
+			name = Debug;
+		};
+		E386CD9122807ACF004E3438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCED19B82634EBB7CD9639B /* Pods-PopularTvUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XXU279MN2;
+				INFOPLIST_FILE = PopularTvUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PopularTv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E386CD5C22807ACE004E3438 /* Build configuration list for PBXProject "PopularTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E386CD8722807ACF004E3438 /* Debug */,
+				E386CD8822807ACF004E3438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E386CD8922807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E386CD8A22807ACF004E3438 /* Debug */,
+				E386CD8B22807ACF004E3438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E386CD8C22807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E386CD8D22807ACF004E3438 /* Debug */,
+				E386CD8E22807ACF004E3438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E386CD8F22807ACF004E3438 /* Build configuration list for PBXNativeTarget "PopularTvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E386CD9022807ACF004E3438 /* Debug */,
+				E386CD9122807ACF004E3438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E386CD5922807ACE004E3438 /* Project object */;
+}

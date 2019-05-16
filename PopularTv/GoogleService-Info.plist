@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>632792483193-fdiqva6o3iob6osjijunpd14grh7mpeg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.632792483193-fdiqva6o3iob6osjijunpd14grh7mpeg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCEUCiDu9X7XYq3DIYARDSykeabJbANa2Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>632792483193</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ter.PopularTV</string>
+	<key>PROJECT_ID</key>
+	<string>populartv-4fb16</string>
+	<key>STORAGE_BUCKET</key>
+	<string>populartv-4fb16.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:632792483193:ios:47ff305a9d8bb65e</string>
+	<key>DATABASE_URL</key>
+	<string>https://populartv-4fb16.firebaseio.com</string>
+</dict>
+</plist>

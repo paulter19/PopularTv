@@ -1,0 +1,6 @@
+framework module Pods_PopularTvUITests {
+  umbrella header "Pods-PopularTvUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
