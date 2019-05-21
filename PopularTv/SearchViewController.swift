@@ -77,32 +77,47 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(self.searchFor == "shows"){
-            let show = self.trendingMovies[indexPath.row]
-            print("Clicked show: \(show.getTitle())")
-            print("image url is: \(show.getImage())")
+            let movie = self.trendingMovies[indexPath.row]
+            let alert = UIAlertController(title: movie.getTitle(), message: movie.getCaption(), preferredStyle: .alert)
             
-            let detailController = storyboard?.instantiateViewController(withIdentifier: "DetailController") as! DetailController
             
-            self.present(detailController, animated: true) {
-                detailController.movie = show
-                detailController.caption.text = show.getCaption()
-                URLSession.shared.dataTask(with: URL(string: show.getImage())!, completionHandler: { (data, response, error) in
-                    
-                    if error != nil {
-                        print(error!)
-                        return
-                    }
-                    
-                    DispatchQueue.main.async {
-                        
-                        if let downloadedImage = UIImage(data: data!){
-                            detailController.image.image = downloadedImage
-                        }
-                    }
-                }).resume()
+            
+            
+            
+            let add = UIAlertAction(title: "Add to My Shows", style: .default) { (action) in
+                let ref =  Database.database().reference().child("Users").child(Auth.auth().currentUser?.uid ?? "")
                 
+                ref.observeSingleEvent(of: .value) { (snapshot) in
+                    if let dict = snapshot.value as? [String:Any]{
+                        let userDictionary = dict
+                        var movies = userDictionary["mymovies"] as! [String]
+                        if(!movies.contains(movie.getId() ?? "")){
+                            movies.append(movie.getId() ?? "")
+                        }
+                        Database.database().reference().child("Users").child((Auth.auth().currentUser?.uid)!).updateChildValues(["mymovies":movies])
+                        
+                        let alertController = UIAlertController(title: "Added", message: "", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                        let myMovies = self.storyboard?.instantiateViewController(withIdentifier: "MyMovies") as! MyMoviesViewController
+                        
+                        self.present(myMovies, animated: false, completion: nil)
+                        
+                    }
+                }
                 
             }
+            
+            
+            
+            alert.addAction(add)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            
+            
+            self.present(alert, animated: false, completion: nil)
+            
+            
 
         }
         

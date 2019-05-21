@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5657ED726CC283C587B86FB9 /* Pods_PopularTv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C65E0D6125078CDF65D0A /* Pods_PopularTv.framework */; };
+		6128BDF2228D36DC006AC2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6128BDF1228D36DB006AC2CF /* GoogleService-Info.plist */; };
+		61406054228E729D00DE319F /* ratemelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61406053228E729D00DE319F /* ratemelogo.png */; };
 		7F4DDDE269812A0E69E94FDE /* Pods_PopularTvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5672735FBC1CB8D3374D8BD /* Pods_PopularTvTests.framework */; };
 		AD6AFCA1CDFBA144AEDB8DAE /* Pods_PopularTvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907FC3E2F5FA3BA5F3BB4915 /* Pods_PopularTvUITests.framework */; };
 		E386CD6522807ACE004E3438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD6422807ACE004E3438 /* AppDelegate.swift */; };
@@ -17,7 +19,6 @@
 		E386CD6F22807ACF004E3438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E386CD6D22807ACF004E3438 /* LaunchScreen.storyboard */; };
 		E386CD7A22807ACF004E3438 /* PopularTvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD7922807ACF004E3438 /* PopularTvTests.swift */; };
 		E386CD8522807ACF004E3438 /* PopularTvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD8422807ACF004E3438 /* PopularTvUITests.swift */; };
-		E386CD9322807AFC004E3438 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E386CD9222807AFB004E3438 /* GoogleService-Info.plist */; };
 		E386CD9522807D3B004E3438 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9422807D3B004E3438 /* HomeTableViewCell.swift */; };
 		E386CD9722807D50004E3438 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9622807D50004E3438 /* HomeCollectionViewCell.swift */; };
 		E386CD9922807E83004E3438 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CD9822807E83004E3438 /* Movie.swift */; };
@@ -53,6 +54,8 @@
 		172775C54A3C8D2C599648DC /* Pods-PopularTvUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvUITests/Pods-PopularTvUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DCED19B82634EBB7CD9639B /* Pods-PopularTvUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvUITests/Pods-PopularTvUITests.release.xcconfig"; sourceTree = "<group>"; };
 		513A81F538EA87E6BDBE584F /* Pods-PopularTvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvTests/Pods-PopularTvTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6128BDF1228D36DB006AC2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61406053228E729D00DE319F /* ratemelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ratemelogo.png; sourceTree = "<group>"; };
 		793500AE8BA2744DB3E5F34C /* Pods-PopularTvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularTvTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopularTvTests/Pods-PopularTvTests.release.xcconfig"; sourceTree = "<group>"; };
 		907FC3E2F5FA3BA5F3BB4915 /* Pods_PopularTvUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularTvUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1C65E0D6125078CDF65D0A /* Pods_PopularTv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularTv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +73,6 @@
 		E386CD8022807ACF004E3438 /* PopularTvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E386CD8422807ACF004E3438 /* PopularTvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvUITests.swift; sourceTree = "<group>"; };
 		E386CD8622807ACF004E3438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E386CD9222807AFB004E3438 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E386CD9422807D3B004E3438 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E386CD9622807D50004E3438 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E386CD9822807E83004E3438 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -174,8 +176,9 @@
 				E386CD6B22807ACF004E3438 /* Assets.xcassets */,
 				E386CD6D22807ACF004E3438 /* LaunchScreen.storyboard */,
 				E386CD7022807ACF004E3438 /* Info.plist */,
-				E386CD9222807AFB004E3438 /* GoogleService-Info.plist */,
+				6128BDF1228D36DB006AC2CF /* GoogleService-Info.plist */,
 				E3C480AF2283439B007B175B /* app store logo.png */,
+				61406053228E729D00DE319F /* ratemelogo.png */,
 			);
 			path = PopularTv;
 			sourceTree = "<group>";
@@ -309,8 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61406054228E729D00DE319F /* ratemelogo.png in Resources */,
 				E386CD6F22807ACF004E3438 /* LaunchScreen.storyboard in Resources */,
-				E386CD9322807AFC004E3438 /* GoogleService-Info.plist in Resources */,
+				6128BDF2228D36DC006AC2CF /* GoogleService-Info.plist in Resources */,
 				E386CD6C22807ACF004E3438 /* Assets.xcassets in Resources */,
 				E3C480B02283439C007B175B /* app store logo.png in Resources */,
 				E386CD6A22807ACE004E3438 /* Main.storyboard in Resources */,
@@ -631,7 +635,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -650,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.poptv.PopularTv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

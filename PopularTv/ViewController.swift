@@ -134,25 +134,93 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let movie = self.myMovies[indexPath.row]
+        let alert = UIAlertController(title: movie.getTitle(), message: movie.getCaption(), preferredStyle: .alert)
         
-        let detailController = storyboard?.instantiateViewController(withIdentifier: "DetailController") as! DetailController
         
-        self.present(detailController, animated: true) {
-            detailController.movie = movie
-            detailController.caption.text = movie.getCaption()
+        
+        
+        
+        let add = UIAlertAction(title: "Add to My Shows", style: .default) { (action) in
+            let ref =  Database.database().reference().child("Users").child(Auth.auth().currentUser?.uid ?? "")
             
-            if let image = self.myMoviesImageCache.object(forKey: movie.getImage() as AnyObject) as? UIImage{
-                detailController.image.image = image
-            }else{
-                detailController.image.image = UIImage()
+            ref.observeSingleEvent(of: .value) { (snapshot) in
+                if let dict = snapshot.value as? [String:Any]{
+                    let userDictionary = dict
+                    var movies = userDictionary["mymovies"] as! [String]
+                    if(!movies.contains(movie.getId() ?? "")){
+                        movies.append(movie.getId() ?? "")
+                    }
+                    Database.database().reference().child("Users").child((Auth.auth().currentUser?.uid)!).updateChildValues(["mymovies":movies])
+                    
+                    let alertController = UIAlertController(title: "Added", message: "", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    let myMovies = self.storyboard?.instantiateViewController(withIdentifier: "MyMovies") as! MyMoviesViewController
+                    
+                    self.present(myMovies, animated: false, completion: nil)
+                    
+                }
             }
+            
         }
+        
+        
+        
+        alert.addAction(add)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        
+        self.present(alert, animated: false, completion: nil)
         
        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movie = self.trendingMovies[indexPath.row]
+        let alert = UIAlertController(title: movie.getTitle(), message: movie.getCaption(), preferredStyle: .alert)
+        
+        
+        
+        
+        
+        let add = UIAlertAction(title: "Add to My Shows", style: .default) { (action) in
+            let ref =  Database.database().reference().child("Users").child(Auth.auth().currentUser?.uid ?? "")
+            
+            ref.observeSingleEvent(of: .value) { (snapshot) in
+                if let dict = snapshot.value as? [String:Any]{
+                    let userDictionary = dict
+                    var movies = userDictionary["mymovies"] as! [String]
+                    if(!movies.contains(movie.getId() ?? "")){
+                        movies.append(movie.getId() ?? "")
+                    }
+                    Database.database().reference().child("Users").child((Auth.auth().currentUser?.uid)!).updateChildValues(["mymovies":movies])
+                    
+                    let alertController = UIAlertController(title: "Added", message: "", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    let myMovies = self.storyboard?.instantiateViewController(withIdentifier: "MyMovies") as! MyMoviesViewController
+                    
+                    self.present(myMovies, animated: false, completion: nil)
+                    
+                }
+            }
+            
+        }
+        
+        
+        
+        alert.addAction(add)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        
+        self.present(alert, animated: false, completion: nil)
+        
+        
+        
+        
+       /* let movie = self.trendingMovies[indexPath.row]
         let detailController = storyboard?.instantiateViewController(withIdentifier: "DetailController") as! DetailController
         
         
@@ -166,6 +234,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             detailController.movie = movie
 
         }
+ 
+ */
         
     }
     
